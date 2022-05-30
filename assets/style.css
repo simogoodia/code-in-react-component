@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    overflow: hidden;
+}
+/* Start Container */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logo img {
+    height: 100vh;
+    width: 90vh;
+}
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* End Container */
+/* logo-heading */
+.logo-heading {
+    margin-bottom: 40px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.logo-heading img {
+    width: 40px;
+    height: auto;
+    margin-right: 20px;
+}
+.logo-heading h2 {
+    font-size: 29px;
+}
+@media screen and (max-width: 1240px) {
+    body {
+        background-color: #C6C5E0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    .logo-heading {
+        display: flex;
+    }
+}
+/* logo-heading */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 600px;
+    margin: 0 auto;
+}
+@media screen and (max-width: 1240px) {
+    .card {
+        width: auto;
+        box-shadow: 1px 3px 10px rgba(1, 1, 1, .2);
+    }
+    .logo img {
+        display: none;
+    }
+}
+.card h2 {
+    text-align: center;
+    margin: 10px 0 20px;
+}
+
+.card .google-apple {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.card .google-apple .google,
+.card .google-apple .apple {
+    cursor: pointer;
+    width: 48%;
+    background: #fff;
+    border: 1.5px solid #C6C5E0;
+    padding: 8px 30px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .google-apple .google img,
+.card .google-apple .apple img {
+    margin-right: 10px;
+}
+.card .border-or {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 7px 0;
+}
+
+.card .border-or .border {
+    width: 43%;
+    height: 1px;
+    background-color: #C6C5E0;
+}
+
+.card form .name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card input:not([type="submit"]) {
+    background-color: #F4F7FE;
+    padding: 8px 15px;
+    border-radius: 7px;
+    border: 1.4px solid #C6C5E0;
+}
+
+.card input:not([type="submit"])::placeholder {
+    color: #6F767E;
+}
+
+.card input:focus {
+    outline: 0;
+}
+
+.card form i:not(.fa-eye) {
+    position: absolute;
+    top: 50%;
+    color: #6F767E;
+    left: 13px;
+    transform: translateY(-50%);
+}
+
+.card form .name .first-name,
+.card form .name .last-name {
+    position: relative;
+    width: 48%;
+    margin-bottom: 10px;
+}
+
+.card form .name .first-name input,
+.card form .name .last-name input {
+    width: 100%;
+    padding-left: 40px;
+}
+
+.card form .email,
+.card form .password {
+    margin-bottom: 10px;
+    position: relative;
+    width: 100%;
+}
+
+.card form .password i.fa-eye {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #F4F7FE;
+    border-radius: 5px;
+    font-size: 13px;
+    color: #6F767E;
+    border: 1.4px solid #C6C5E0;
+    right: 10px;
+    cursor: pointer;
+    width: 28px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.card form .email input,
+.card form .password input {
+    width: 100%;
+    padding-left: 40px;
+}
+.card .remember {
+    margin: 15px 0;
+}
+.card .remember,
+.card .remember label,
+.card .remember span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card .remember .label-1,
+.card .remember .forget-pass {
+    display: none;
+}
+.card .remember input,
+.card .remember span img {
+    margin-right: 7px;
+}
+.card .sign-in {
+    text-align: center;
+    color: #6F767E;
+    margin-top: 16px;
+    display: block;
+}
+.card .remember .label-2 {
+    display: flex;
+    align-items: center;
+}
+@media screen and (max-width: 1240px) {
+    .card .remember .label-1,
+    .card .remember .forget-pass {
+        display: flex;
+    }
+    .card .remember .label-2 {
+        display: none;
+    }
+}
+.card .remember .label-2 span {
+    color: #6F767E;
+}
+.card .remember .label-2 span>span {
+    margin-left: 4px;
+}
+.card .remember .label-2 span > span,
+.card .sign-in > span {
+    color: #000;
+    font-weight: 600;
+}
+
+.card input[type="submit"] {
+    margin: 0 auto 10px;
+    display: block;
+    width: 80%;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 0;
+    color: #fff;
+    background-color: #3972F9;
+    cursor: pointer;
+}
+.card input[type="submit"]:active {
+    transform: scale(0.98);
+}
+.card input[type="submit"]:focus {
+    outline: 0;
+}
